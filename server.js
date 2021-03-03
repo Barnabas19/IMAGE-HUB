@@ -8,7 +8,7 @@ app.set('views', __dirname + '/views');
 app = config(app);
 
 //CONNECTING TO THE MONGODB SERVER
-mongoose.connect('mongodb://localhost/imgPloadr');
+mongoose.connect('mongodb+srv://barnabas-admin:barnabas19@cluster0.z9feb.mongodb.net/imagine');
 mongoose.connection.on('open', function(){
     console.log('Mongoose connected.');
 });
