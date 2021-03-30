@@ -8,7 +8,7 @@ app.set('views', __dirname + '/views');
 app = config(app);
 
 //CONNECTING TO THE MONGODB SERVER
-mongoose.connect(`${process.env.DB_URL}`);
+mongoose.connect(process.env.DB_URL);
 mongoose.connection.on('open', function(){
     console.log('Mongoose connected.');
 });
