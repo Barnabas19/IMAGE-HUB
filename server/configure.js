@@ -1,7 +1,7 @@
 var path = require('path');
 var routes = require('./routes');
 var exphbs = require('express-handlebars');
-var express = require('express');
+var express = require('express'); //api framework
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var morgan = require('morgan');
